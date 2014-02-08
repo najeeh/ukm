@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<!-- character rumi -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile width, penuh page -->
+
+<link rel="stylesheet" href="css/najeeh.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.min.css" /> 
+
+<script src="js/jquery.min.js"></script>
+<!-- jquery mobil tema-->
+<script src="js/jquery.mobile.min.js"></script>
+<!-- -->
+
+</head>
+
+<body>
+
+<!-- Ini Page Pertama -->
+<div data-role="page" id="p1">
+	<div data-role="header" data-position="fixed">
+		<h3>الموضوع</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<h3>الموضوع</h3>
+		<p>
+		الموسوعة الحديثية الرقمية ضوابطها وضمانها جودةً وتثبتاً رقمياً: دراسة تطبيقية 
+		إن الحمد لله نحمده ونستغفره ونستهديه ونعوذ بالله من شرور أنفسنا ومن سيئا
+		ت أعمالنا، من يهده الله فلا مضل له ومن يضلل فلا هادي له، وأشهد
+		أن لا إله إلا الله وحده لا شريك له، وأشهد أن محمداً عبده ورسوله، صلوات الله وسلامه عليه، وآله وصحبه و
+		من تبعهم بإحسان إلى يوم الدين.
+		</p>
+		<!-- untuk buat menu kat bawah text .. guna yg bawah ni..
+		<a href="#p2" class="ui-btn" data-transition="fade" data-direction="reverse"> Ke Page 2 </a>
+		<a href="#p3" class="ui-btn" data-transition="fade" data-direction="reverse"> Ke Page 3 </a> -->
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">Utama</a></li>
+			<!-- kegunaan ui-btn-active ui-state-persist untuk highlight ikon yg mukasurat tu berada-->
+                <li><a href="#p2" data-icon="star">Isi</a></li>
+                <li><a href="#p3" data-icon="gear">Hubungi</a></li>
+					<!-- grid, star, gear ialah ikon-ikon. Rujuk senarai ikon -->
+			</ul>
+        </div>
+	<h3>Nav Bar</h3>
+		</div>
+</div>
+
+<!-- Ini Page Kedua -->
+<div data-role="page" id="p2">
+	<div data-role="panel" data-display="overlay" id="panel1" data-position="right">
+		<h3>KANDUNGAN</h3>
+		<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+			<h4>Pantulan Cahaya</h4>
+			<ul data-role="listview" data-inset="false">
+				<li><a href="bab1sub1.html" data-transition="pop">Pengenalan</a></li>
+				<li>Peraturan</li>
+				<li>Kedudukan</li>
+			</ul>
+			<!-- untuk buat menu yg collapse sliding dari tepi macam maybank2u -->
+		</div>
+	</div>
+
+	<div data-role="header" data-position="fixed">
+		<a href="#panel1" data-icon="bars" data-iconpos="notext" iconpos="right">Panel</a>
+		<!-- href tu nak panggil balik -->
+		<h3>Cahaya</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<h3>SIFAT CAHAYA</h3>
+		<ol data-role="listview" data-inset="true">
+			<li>Cahaya bergerak lurus</li>
+			<li>Cahaya boleh dipantulkan</li>
+			<li>Cahaya boleh dibiaskan</li> 
+			<li>Cahaya boleh diserap</li>
+		</ol>
+	</div>
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid">Utama</a></li>
+                <li><a href="#" data-icon="star" class="ui-btn-active ui-state-persist">Isi</a></li>
+                <li><a href="#p3" data-icon="gear">Hubungi</a></li>
+			</ul>
+        </div>
+		<h3>Nav Bar</h3>
+		</div>
+</div>
+
+<!-- Ini Page Ketiga -->
+<div data-role="page" id="p3">
+	<div data-role="header" data-position="fixed">
+		<h3>Support</h3>
+	</div>
+	<div role="main" class="ui-content">
+		<!-- popup utk al-Qaradawy -->
+		<div data-role="popup" id="d1">
+			<a href="tel:+60125658871" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext ui-corner-all">Telefon</a>
+			<a href="sms://+60125658871" class="ui-btn ui-btn-inline ui-icon-comment ui-btn-icon-notext ui-corner-all">SMS</a>
+			<a href="mailto:najeeh@yahoo.com" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-notext ui-corner-all">Email</a>
+			<!-- features ni ada dlm button -->
+		</div>
+		<!-- popup utk al-Buty -->
+		<div data-role="popup" id="d2">
+			<a href="tel:+601115740057" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext ui-corner-all">Telefon</a>
+			<a href="sms://+601115740057" class="ui-btn ui-btn-inline ui-icon-comment ui-btn-icon-notext ui-corner-all">SMS</a>
+			<a href="mailto:najeeh2012@gmail.com" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-notext ui-corner-all">Email</a>
+			<!-- features ni ada dlm button -->
+		</div>
+		<!-- Senaraikan pengarang -->
+		<h3>Pengarang</h3>
+		<ul data-role="listview" data-inset="true"> 
+			<li>
+				<a href="#d1" data-rel="popup" data-transition="slideup">
+					<img src="gambar/1.jpg" width="150" />
+					<h3>Syeikh Dr Yusuf al-Qaradawy</h3>
+					<p>Qatar</p>
+				</a>
+			</li>
+			<li>
+				<a href="#d2" data-rel="popup" data-transition="slideup">
+					<img src="gambar/2.jpg" width="150" />
+					<h3>Syeikh Dr Said Ramadan al-Buty</h3>
+					<p>Syria</p>
+				</a>
+			</li>
+		</ul>
+		<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+		src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=usim+nilai&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=42.224734,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=2.844204,101.78189&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=usim+nilai&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=42.224734,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=2.844204,101.78189&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		</div>
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+            <ul>
+                <li><a href="#p1" data-icon="grid">Utama</a></li>
+                <li><a href="#p2" data-icon="star">Isi</a></li>
+                <li><a data-icon="gear" class="ui-btn-active ui-state-persist">Hubungi</a></li>
+					<!-- grid, star, gear ialah ikon-ikon. Rujuk senarai ikon -->
+			</ul>
+        </div>
+
+		<h3>Nav Bar</h3>
+	</div>
+</div>
+
+</body>
+</html>
+
